@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Bicycle</string>
-    <string name="ico_ion_arrow_down"></string>
 
     //icons
     <string name="fa_icon_globe">&#xf0ac;</string>

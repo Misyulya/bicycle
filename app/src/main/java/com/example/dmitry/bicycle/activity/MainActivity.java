@@ -1,22 +1,19 @@
-package com.example.dmitry.bicycle;
+package com.example.dmitry.bicycle.activity;
 
-import android.graphics.Typeface;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
+import com.example.dmitry.bicycle.R;
 import com.example.dmitry.bicycle.adapter.SampleFragmentPagerAdapter;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-        Typeface iconFont = FontManager.getTypeface(getApplicationContext(), FontManager.FONTAWESOME);
-        FontManager.markAsIconContainer(findViewById(R.id.sliding_tabs), iconFont);
     }
 
     private void initView() {
@@ -35,6 +32,5 @@ public class MainActivity extends AppCompatActivity {
             tab.setCustomView(pagerAdapter.getTabView(i));
         }
     }
-
 
 }

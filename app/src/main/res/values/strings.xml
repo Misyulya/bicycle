@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bicycle</string>
+    <string name="ico_ion_arrow_down"></string>
+
+    //icons
+    <string name="fa_icon_globe">&#xf0ac;</string>
+    <string name="fa_icon_bicycle">&#xf206;</string>
+    <string name="fa_icon_user">&#xf007;</string>
+
+    <string-array name="fa_tabs_icons">
+        <item>@string/fa_icon_globe</item>
+        <item>@string/fa_icon_bicycle</item>
+        <item>@string/fa_icon_user</item>
+    </string-array>
+
+</resources>

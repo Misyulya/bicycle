@@ -1,0 +1,33 @@
+ext.versions = [
+        code                         : 1,
+        name                         : '1.0',
+
+        minSdk                       : 18,
+        targetSdk                    : 25,
+        compileSdk                   : 25,
+        buildTools                   : '25.0.2',
+
+        androidGradlePlugin          : '2.3.1',
+
+        supportLibs                  : '25.3.1',
+        constraintLayout             : '1.0.2',
+
+        espresso                     : '2.2.2',
+
+        junit                        : '4.12'
+]
+
+ext.gradlePlugins = [
+        android          : "com.android.tools.build:gradle:$versions.androidGradlePlugin",
+]
+
+ext.libraries = [
+        supportAppCompat        : "com.android.support:appcompat-v7:$versions.supportLibs",
+        supportDesign           : "com.android.support:design:$versions.supportLibs",
+
+        constraintLayout        : "com.android.support.constraint:constraint-layout:$versions.constraintLayout",
+
+        // Test dependencies
+        junit                   : "junit:junit:$versions.junit",
+        espressoCore            : "com.android.support.test.espresso:espresso-core:$versions.espresso"
+]
